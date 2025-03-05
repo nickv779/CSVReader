@@ -2,6 +2,14 @@ import csv
 import json
 import argparse
 
+# Col A = Algorithm Name, Col B = Whole Psuedocode Algorithm, Col C = Line-by-Line Psuedocode
+# Col D = Code Mapped to Col C, Col E = Whole Code Algorithm
+
+# WholeLinePsuedo.json = B to C
+# LineByLine.json = C to D
+# LineWholeCode.json = D to E
+# WholeAlg.json = B to E
+
 def csv_to_json(csv_path, json_path):
     with open(csv_path, mode='r', encoding='utf-8') as csv_file:
         csv_reader = csv.DictReader(csv_file)
