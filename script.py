@@ -10,6 +10,12 @@ import argparse
 # LineWholeCode.json = D to E
 # WholeAlg.json = B to E
 
+# json object
+# {
+#    "input": "input string",
+#    "output": "output string",
+# }
+
 def csv_to_json(csv_path, json_path):
     with open(csv_path, mode='r', encoding='utf-8') as csv_file:
         csv_reader = csv.DictReader(csv_file)
